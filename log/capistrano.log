@@ -1,0 +1,86 @@
+# Logfile created on 2018-01-31 23:41:44 +0800 by logger.rb/56815
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-01-31 23:41:44 +0800 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-01-31 23:42:14 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-01-31 23:44:15 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-01-31 23:52:39 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-01-31 23:57:21 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [971fec9a] Running /usr/bin/env mkdir -p /tmp as herry@phpnoob.tk
+ DEBUG [971fec9a] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-01 00:00:24 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [471e05b7] Running /usr/bin/env mkdir -p /tmp as herry@phpnoob.tk
+ DEBUG [471e05b7] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-01 00:01:38 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [3d21af13] Running /usr/bin/env mkdir -p /tmp as root@phpnoob.tk
+ DEBUG [3d21af13] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3d21af13] Finished in 6.142 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-srnoob.my_app_name-production-rann.sh 0.0%
+  INFO Uploading /tmp/git-ssh-srnoob.my_app_name-production-rann.sh 100.0%
+  INFO [e6ee584a] Running /usr/bin/env chmod 700 /tmp/git-ssh-srnoob.my_app_name-production-rann.sh as root@phpnoob.tk
+ DEBUG [e6ee584a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-srnoob.my_app_name-production-rann.sh
+  INFO [e6ee584a] Finished in 0.838 seconds with exit status 0 (successful).
+  INFO [5dfb9de0] Running /usr/bin/env git ls-remote git@github.com:SrNoob/what_is_capistrano.git HEAD as root@phpnoob.tk
+ DEBUG [5dfb9de0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-srnoob.my_app_name-production-rann.sh" ; /usr/bin/env git ls-remote git@github.com:SrNoob/what_is_capistrano.git HEAD )
+  INFO [5dfb9de0] Finished in 2.172 seconds with exit status 0 (successful).
+  INFO [b0fc4e7f] Running /usr/bin/env mkdir -p /var/www/srnoob.my_app_name/shared /var/www/srnoob.my_app_name/releases as root@phpnoob.tk
+ DEBUG [b0fc4e7f] Command: /usr/bin/env mkdir -p /var/www/srnoob.my_app_name/shared /var/www/srnoob.my_app_name/releases
+  INFO [b0fc4e7f] Finished in 0.862 seconds with exit status 0 (successful).
+ DEBUG [c6a1cf2c] Running [ -f /var/www/srnoob.my_app_name/current/REVISION ] as root@phpnoob.tk
+ DEBUG [c6a1cf2c] Command: [ -f /var/www/srnoob.my_app_name/current/REVISION ]
+ DEBUG [c6a1cf2c] Finished in 0.878 seconds with exit status 1 (failed).
+ DEBUG [25fb2b42] Running [ -f /var/www/srnoob.my_app_name/repo/HEAD ] as root@phpnoob.tk
+ DEBUG [25fb2b42] Command: [ -f /var/www/srnoob.my_app_name/repo/HEAD ]
+ DEBUG [25fb2b42] Finished in 0.879 seconds with exit status 1 (failed).
+ DEBUG [56e98e0d] Running if test ! -d /var/www/srnoob.my_app_name; then echo "Directory does not exist '/var/www/srnoob.my_app_name'" 1>&2; false; fi as root@phpnoob.tk
+ DEBUG [56e98e0d] Command: if test ! -d /var/www/srnoob.my_app_name; then echo "Directory does not exist '/var/www/srnoob.my_app_name'" 1>&2; false; fi
+ DEBUG [56e98e0d] Finished in 0.861 seconds with exit status 0 (successful).
+  INFO [b577402e] Running /usr/bin/env git clone --mirror git@github.com:SrNoob/what_is_capistrano.git /var/www/srnoob.my_app_name/repo as root@phpnoob.tk
+ DEBUG [b577402e] Command: cd /var/www/srnoob.my_app_name && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-srnoob.my_app_name-production-rann.sh" ; /usr/bin/env git clone --mirror git@github.com:SrNoob/what_is_capistrano.git /var/www/srnoob.my_app_name/repo )
+ DEBUG [b577402e] 	Cloning into bare repository '/var/www/srnoob.my_app_name/repo'...
+ DEBUG [b577402e] 	warning: You appear to have cloned an empty repository.
+  INFO [b577402e] Finished in 2.173 seconds with exit status 0 (successful).
+ DEBUG [c15f1940] Running if test ! -d /var/www/srnoob.my_app_name/repo; then echo "Directory does not exist '/var/www/srnoob.my_app_name/repo'" 1>&2; false; fi as root@phpnoob.tk
+ DEBUG [c15f1940] Command: if test ! -d /var/www/srnoob.my_app_name/repo; then echo "Directory does not exist '/var/www/srnoob.my_app_name/repo'" 1>&2; false; fi
+ DEBUG [c15f1940] Finished in 0.862 seconds with exit status 0 (successful).
+  INFO [684c9863] Running /usr/bin/env git remote set-url origin git@github.com:SrNoob/what_is_capistrano.git as root@phpnoob.tk
+ DEBUG [684c9863] Command: cd /var/www/srnoob.my_app_name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-srnoob.my_app_name-production-rann.sh" ; /usr/bin/env git remote set-url origin git@github.com:SrNoob/what_is_capistrano.git )
+  INFO [684c9863] Finished in 0.872 seconds with exit status 0 (successful).
+  INFO [585c2341] Running /usr/bin/env git remote update --prune as root@phpnoob.tk
+ DEBUG [585c2341] Command: cd /var/www/srnoob.my_app_name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-srnoob.my_app_name-production-rann.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [585c2341] 	Fetching origin
+  INFO [585c2341] Finished in 2.141 seconds with exit status 0 (successful).
+ DEBUG [32b7d843] Running if test ! -d /var/www/srnoob.my_app_name/repo; then echo "Directory does not exist '/var/www/srnoob.my_app_name/repo'" 1>&2; false; fi as root@phpnoob.tk
+ DEBUG [32b7d843] Command: if test ! -d /var/www/srnoob.my_app_name/repo; then echo "Directory does not exist '/var/www/srnoob.my_app_name/repo'" 1>&2; false; fi
+ DEBUG [32b7d843] Finished in 0.834 seconds with exit status 0 (successful).
+  INFO [81686c94] Running /usr/bin/env mkdir -p /var/www/srnoob.my_app_name/releases/20180131160151 as root@phpnoob.tk
+ DEBUG [81686c94] Command: cd /var/www/srnoob.my_app_name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-srnoob.my_app_name-production-rann.sh" ; /usr/bin/env mkdir -p /var/www/srnoob.my_app_name/releases/20180131160151 )
+  INFO [81686c94] Finished in 0.877 seconds with exit status 0 (successful).
+  INFO [c9737a52] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/srnoob.my_app_name/releases/20180131160151 as root@phpnoob.tk
+ DEBUG [c9737a52] Command: cd /var/www/srnoob.my_app_name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-srnoob.my_app_name-production-rann.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/srnoob.my_app_name/releases/20180131160151 )
+ DEBUG [c9737a52] 	fatal: Not a valid object name
+ DEBUG [c9737a52] 	tar: 
+ DEBUG [c9737a52] 	This does not look like a tar archive
+ DEBUG [c9737a52] 	
+ DEBUG [c9737a52] 	tar: 
+ DEBUG [c9737a52] 	Exiting with failure status due to previous errors
+ DEBUG [c9737a52] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-01 00:07:11 +0800 cap production deploy:cleanup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b7a8f1de] Running /usr/bin/env ls -x /var/www/srnoob.my_app_name/releases as root@phpnoob.tk
+ DEBUG [b7a8f1de] Command: /usr/bin/env ls -x /var/www/srnoob.my_app_name/releases
+ DEBUG [b7a8f1de] 	20180131160151
+ DEBUG [b7a8f1de] Finished in 6.288 seconds with exit status 0 (successful).
